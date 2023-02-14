@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(`echo $PATH | grep -o ":/" | wc -1` + 1)
+export PATH="$( echo $PATH| tr : '\n' |grep -v action | paste -s -d: )"
