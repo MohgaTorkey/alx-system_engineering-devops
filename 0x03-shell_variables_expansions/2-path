@@ -1,2 +1,2 @@
 #!/bin/bash
-export PATH="$( echo $PATH| tr : '\n' |grep -v action | paste -s -d: )"
+export PATH=$PATH:/action
