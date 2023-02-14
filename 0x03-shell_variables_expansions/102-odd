@@ -1,2 +1,2 @@
 #!/bin/bash
-head -${i} 
+perl -lne 'print if $. % 2==1' 
